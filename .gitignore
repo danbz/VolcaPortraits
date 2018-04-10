@@ -5,6 +5,8 @@
 [Oo]bj/
 [Bb]uild/
 
+Assets/Portraits/
+
 *.a
 *.Thumbs.db
 *.Thumbs.db.meta
