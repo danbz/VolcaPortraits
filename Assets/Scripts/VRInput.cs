@@ -9,7 +9,7 @@ public class VRInput : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-	    if(TrackedController.left.GetTouchPressDown())
+	    if(TrackedController.left != null && TrackedController.left.GetTouchPressDown())
         {
             Vector2 touchPos = TrackedController.left.GetTouchPosition();
 
@@ -19,7 +19,7 @@ public class VRInput : MonoBehaviour
                 GoBack();
         }
 
-        if (TrackedController.right.GetTouchPressDown())
+        if (TrackedController.right != null && TrackedController.right.GetTouchPressDown())
         {
             Vector2 touchPos = TrackedController.right.GetTouchPosition();
 
